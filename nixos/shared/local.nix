@@ -2,6 +2,7 @@
 
 {
   time.timeZone = "Europe/Istanbul";
+  console.keyMap = "trq";
 
   i18n = {
     defaultLocale = "en_GB.UTF-8";

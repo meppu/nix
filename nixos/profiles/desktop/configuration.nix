@@ -15,7 +15,6 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
-  console.keyMap = "trq";
 
   users.users.meppu = {
     isNormalUser = true;

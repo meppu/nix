@@ -16,3 +16,7 @@ sudo ./link.sh root desktop
 # Home profile (home <target user>):
 ./link.sh home meppu
 ```
+```bash
+sudo nixos-rebuilt swich --upgrade
+home-manager switch
+```

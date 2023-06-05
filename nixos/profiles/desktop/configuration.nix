@@ -9,6 +9,7 @@
     ../../shared/local.nix
     ../../shared/networking.nix
     ../../shared/nvidia.nix
+    ../../shared/shell.nix
     ../../shared/podman.nix
     ../../shared/sound.nix
     ../../shared/xorg.nix

@@ -8,6 +8,7 @@
 
     extraConfig = {
       init.defaultBranch = "main";
+      core.editor = "code --wait";
 
       gpg = {
         format = "ssh";

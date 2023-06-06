@@ -16,6 +16,6 @@ sudo nixos-rebuild switch --flake github:meppu/nix-config#desktop
 
 I made my own nix wallpapers, you are free to modify and distribute. Enjoy!
 
-![dark](/home-manager/meppu/wallpapers/nixos-liquid-dark.png)
+![dark](/home/meppu/wallpapers/nixos-liquid-dark.png)
 
-![light](/home-manager/meppu/wallpapers/nixos-liquid-light.png)
+![light](/home/meppu/wallpapers/nixos-liquid-light.png)

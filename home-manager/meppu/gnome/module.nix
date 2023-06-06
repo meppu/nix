@@ -68,7 +68,7 @@
       dot-style-focused = "DOTS";
       dot-style-unfocused = "DOTS";
 
-      panel-element-positions = (builtins.readFile "/home/meppu/nix-config/external/panel/positions.json");
+      panel-element-positions = (builtins.readFile ./panel-positions.json);
     };
   };
 }

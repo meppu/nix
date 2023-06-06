@@ -2,8 +2,9 @@
 
 {
   imports = [
+    ./gnome/module.nix
+
     ./git.nix
-    ./gnome.nix
     ./vscode.nix
   ];
 
@@ -14,10 +15,6 @@
     username = "meppu";
     homeDirectory = "/home/meppu";
     stateVersion = "23.05";
-
-    file = {
-      ".ssh/allowed_signers".text = "* ${builtins.readFile /home/meppu/.ssh/id_rsa.pub}";
-    };
 
     packages = with pkgs; [
       # Dev

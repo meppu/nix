@@ -3,6 +3,9 @@
 {
   imports = [
     ./hardware-configuration.nix
+
+    ../../users/meppu.nix
+
     ../../shared/boot.nix
     ../../shared/font.nix
     ../../shared/gnome.nix
@@ -12,23 +15,16 @@
     ../../shared/shell.nix
     ../../shared/podman.nix
     ../../shared/sound.nix
-    ../../shared/xorg.nix
   ];
 
-  nix.gc = {
-		automatic = true;
-		dates = "weekly";
-		options = "--delete-older-than 30d";
-	};
+  nix = {
+    gc = {
+		  automatic = true;
+		  dates = "weekly";
+		  options = "--delete-older-than 30d";
+	  };
 
-  environment.systemPackages = with pkgs; [
-    neofetch vim wget
-  ];
-
-  users.users.meppu = {
-    isNormalUser = true;
-    description = "meppu";
-    extraGroups = [ "networkmanager" "wheel" ];
+    settings.experimental-features = [ "nix-command" "flakes" ];
   };
   
   nixpkgs.config.allowUnfree = true;

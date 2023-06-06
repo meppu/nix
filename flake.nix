@@ -15,12 +15,12 @@
       "desktop" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./nixos/profiles/desktop/configuration.nix
+          ./system/profiles/desktop/configuration.nix
 
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.meppu = import ./home-manager/meppu/home.nix;
+            home-manager.users.meppu = import ./home/meppu/home.nix;
           }
         ];
       };

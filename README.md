@@ -11,3 +11,11 @@ Then select a profile and rebuild. an example for `desktop`:
 ```bash
 sudo nixos-rebuild switch --flake github:meppu/nix-config#desktop
 ```
+
+## Wallpapers
+
+I made my own nix wallpapers, you are free to modify and distribute. Enjoy!
+
+![dark](/home-manager/meppu/wallpapers/nixos-liquid-dark.png)
+
+![light](/home-manager/meppu/wallpapers/nixos-liquid-light.png)

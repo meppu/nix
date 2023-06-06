@@ -60,6 +60,7 @@
       appicon-margin = 0;
       appicon-padding = 8;
       show-apps-icon-side-padding = 0;
+      showdesktop-button-width = 10;
 
       trans-use-dynamic-opacity = true;
       trans-panel-opacity = 0.8;

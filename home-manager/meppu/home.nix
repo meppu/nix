@@ -5,6 +5,7 @@
     ./git/default.nix
     ./gnome/default.nix
     ./vscode/default.nix
+    ./wallpapers/default.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

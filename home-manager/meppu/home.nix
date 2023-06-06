@@ -2,10 +2,9 @@
 
 {
   imports = [
-    ./gnome/module.nix
-
-    ./git.nix
-    ./vscode.nix
+    ./git/default.nix
+    ./gnome/default.nix
+    ./vscode/default.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

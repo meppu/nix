@@ -62,9 +62,6 @@
       show-apps-icon-side-padding = 0;
       showdesktop-button-width = 10;
 
-      trans-use-dynamic-opacity = true;
-      trans-panel-opacity = 0.8;
-
       dot-position = "LEFT";
       dot-style-focused = "DOTS";
       dot-style-unfocused = "DOTS";

@@ -10,6 +10,7 @@
       rust-lang.rust-analyzer
       serayuzgur.crates
       bungcip.better-toml
+      esbenp.prettier-vscode
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "vscode-zig";

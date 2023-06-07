@@ -19,10 +19,10 @@
     packages = with pkgs; [
       # Dev
       pods
-      erlang elixir rustup deno nodejs_20 zig gcc13
+      erlang elixir rustup deno zig gcc13
       
       # Daily
-      google-chrome-dev discord spotify authy
+      google-chrome-dev discord spotify authy protonvpn-gui
     ];
   };
 }

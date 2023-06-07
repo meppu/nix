@@ -4,7 +4,7 @@
   users.users.meppu = {
     isNormalUser = true;
     description = "meppu";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     shell = pkgs.fish;
   };
 }

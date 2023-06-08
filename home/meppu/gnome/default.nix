@@ -1,21 +1,32 @@
 { pkgs, ... }:
 
-{
-  home.packages = with pkgs; [
+let
+  gnome-packages = with pkgs; [
     gnome.gnome-tweaks
     gnomeExtensions.appindicator
     gnomeExtensions.just-perfection
     gnomeExtensions.dash-to-panel
   ];
 
+  gtk-theme = {
+    name = "Adwaita-dark";
+  };
+
+  icon-theme = {
+    name = "Papirus-Dark";
+    package = pkgs.papirus-icon-theme;
+  };
+
+  panel-positions = builtins.readFile ./panel-positions.json;
+in
+{
+  home.packages = gnome-packages;
+
   gtk = {
     enable = true;
-    theme.name = "Adwaita-dark";
 
-    iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
-    };
+    theme = gtk-theme;
+    iconTheme = icon-theme;
   };
 
   dconf.settings = {
@@ -66,7 +77,7 @@
       dot-style-focused = "DOTS";
       dot-style-unfocused = "DOTS";
 
-      panel-element-positions = (builtins.readFile ./panel-positions.json);
+      panel-element-positions = panel-positions;
     };
   };
 }

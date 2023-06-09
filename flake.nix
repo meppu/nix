@@ -17,9 +17,11 @@
         modules = [
           ./system/profiles/desktop/configuration.nix
 
-          home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            
             home-manager.users.meppu = import ./home/meppu/home.nix;
           }
         ];

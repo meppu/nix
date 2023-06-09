@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./discord/default.nix
     ./git/default.nix
     ./gnome/default.nix
     ./vscode/default.nix

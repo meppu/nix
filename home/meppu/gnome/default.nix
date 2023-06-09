@@ -13,8 +13,7 @@ let
   };
 
   icon-theme = {
-    name = "Papirus-Dark";
-    package = pkgs.papirus-icon-theme;
+    name = "Adwaita";
   };
 
   panel-positions = builtins.readFile ./panel-positions.json;

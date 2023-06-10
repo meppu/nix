@@ -18,11 +18,7 @@
     stateVersion = "23.05";
 
     packages = with pkgs; [
-      # Dev
       pods
-      erlang elixir rustup deno zig gcc13
-      
-      # Daily
       google-chrome-dev discord spotify authy protonvpn-gui
     ];
   };

@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+    devenv.url = "github:cachix/devenv/v0.6.2";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
@@ -10,10 +11,17 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, devenv, ... }@inputs: 
+    let
+        system = "x86_64-linux";
+    in
+    {
+
     nixosConfigurations = {
       "desktop" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+        inherit system;
+        specialArgs.inputs = inputs;
+
         modules = [
           ./system/profiles/desktop/configuration.nix
 

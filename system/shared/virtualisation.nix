@@ -11,7 +11,7 @@
     libvirtd.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [ 
+  environment.systemPackages = with pkgs; [
     virt-manager
   ];
 }

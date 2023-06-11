@@ -7,7 +7,6 @@
     ../../users/meppu.nix
 
     ../../shared/boot.nix
-    ../../shared/devenv.nix
     ../../shared/font.nix
     ../../shared/gnome.nix
     ../../shared/local.nix

@@ -11,22 +11,13 @@
     ../../shared/gnome.nix
     ../../shared/local.nix
     ../../shared/networking.nix
+    ../../shared/nix.nix
     ../../shared/nvidia.nix
     ../../shared/shell.nix
     ../../shared/virtualisation.nix
     ../../shared/sound.nix
   ];
 
-  nix = {
-    gc = {
-		  automatic = true;
-		  dates = "weekly";
-		  options = "--delete-older-than 14d";
-	  };
-
-    settings.experimental-features = [ "nix-command" "flakes" ];
-  };
-  
-  nixpkgs.config.allowUnfree = true;
+  networking.hostName = "desktop";
   system.stateVersion = "23.05";
 }

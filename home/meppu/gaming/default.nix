@@ -5,4 +5,3 @@
     osu-lazer-bin
   ];
 }
-

@@ -52,5 +52,6 @@
   "workbench.iconTheme": "symbols",
   "workbench.productIconTheme": "fluent-icons",
 
-  "workbench.list.smoothScrolling": true
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right"
 }

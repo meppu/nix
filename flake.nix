@@ -11,11 +11,10 @@
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs: 
-    let
-      system = "x86_64-linux";
-    in
-    {
-
+  let
+    system = "x86_64-linux";
+  in
+  {
     nixosConfigurations = {
       "desktop" = nixpkgs.lib.nixosSystem {
         inherit system;

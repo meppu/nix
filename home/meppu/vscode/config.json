@@ -42,6 +42,9 @@
 
   "update.mode": "none",
 
+  "workbench.colorTheme": "Min Dark",
   "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+
   "workbench.list.smoothScrolling": true
 }

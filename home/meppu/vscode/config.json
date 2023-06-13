@@ -22,10 +22,13 @@
   },
 
   "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
   "editor.parameterHints.enabled": false,
   "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
 
   "erlang.codeLensEnabled": true,
 
@@ -41,6 +44,9 @@
   "terminal.integrated.smoothScrolling": true,
 
   "update.mode": "none",
+
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": true,
 
   "workbench.colorTheme": "Min Dark",
   "workbench.iconTheme": "symbols",

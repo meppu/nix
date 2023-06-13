@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../../users/meppu.nix
+    ./users/meppu.nix
 
     ../../shared/boot.nix
     ../../shared/font.nix

@@ -28,7 +28,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             
-            home-manager.users.meppu = import ./home/meppu/home.nix;
+            home-manager.users.meppu = import  ./home/desktop/meppu/home.nix;
           }
         ];
       };

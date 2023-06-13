@@ -15,14 +15,14 @@
       {
         name = "vscode-zig";
         publisher = "ziglang";
-        version = "0.3.2";
-        sha256 = "szG/Fm86RWWNITIYNvCQmEv8tx2VCAxtkXyQrb7Wsn4=";
+        version = "0.4.0";
+        sha256 = "sha256-03jBiss14kSkYdbC8IzrBWBgL4Js7xDOwog1WiyNPHk=";
       }
       {
         name = "erlang";
         publisher = "pgourlain";
-        version = "0.9.3";
-        sha256 = "9aMkAAx88iJg5R8OKXTyiTZ6N/jJNHM9pBrUA6+e9JE=";
+        version = "0.9.4";
+        sha256 = "sha256-7FD+sIDThS23Ce5nxsIq1DmEJlG8qmQRLlWO6WlwGBY=";
       }
       {
         name = "min-theme";

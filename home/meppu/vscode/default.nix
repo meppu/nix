@@ -1,9 +1,14 @@
 { pkgs, ... }:
 
+let
+  user-config = builtins.fromJSON (builtins.readFile ./config.json);
+in
 {
   programs.vscode = {
     enable = true;
-    extensions = with pkgs.vscode-extensions; [
+    userSettings = user-config;
+
+    extensions = (with pkgs.vscode-extensions; [
       bbenoist.nix
       jakebecker.elixir-ls
       ritwickdey.liveserver
@@ -11,7 +16,8 @@
       serayuzgur.crates
       bungcip.better-toml
       esbenp.prettier-vscode
-    ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      usernamehw.errorlens
+    ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "vscode-zig";
         publisher = "ziglang";

@@ -1,0 +1,47 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.smoothScrolling": true,
+
+  "erlang.codeLensEnabled": true,
+
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+
+  "files.eol": "\n",
+
+  "symbols.hidesExplorerArrows": true,
+
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.smoothScrolling": true,
+
+  "update.mode": "none",
+
+  "workbench.iconTheme": "symbols",
+  "workbench.list.smoothScrolling": true
+}

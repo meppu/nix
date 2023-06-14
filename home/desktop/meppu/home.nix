@@ -3,7 +3,6 @@
 {
   imports = [
     ./discord/default.nix
-    ./gaming/default.nix
     ./git/default.nix
     ./gnome/default.nix
     ./vscode/default.nix
@@ -19,7 +18,7 @@
     stateVersion = "23.05";
 
     packages = with pkgs; [
-      pods
+      pods postman
       google-chrome-dev discord spotify authy protonvpn-gui
     ];
   };

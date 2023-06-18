@@ -39,8 +39,8 @@ in
       {
         name = "symbols";
         publisher = "miguelsolorio";
-        version = "0.0.11";
-        sha256 = "I8EAcR2k7m5pNncxStEhF+1P10TfRARcSQ+ugekIRak=";
+        version = "0.0.12";
+        sha256 = "sha256-eZ/lVoH99ZQA0Xoke941HSuDm6c5JF3owrAvv0uYVK4=";
       }
       {
         name = "fluent-icons";

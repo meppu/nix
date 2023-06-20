@@ -7,7 +7,7 @@
       set fish_greeting
 
       function flake-env
-        cd $argv && echo "code . && exit" | nix develop --impure
+        cd $argv && nix develop --impure
       end
 
       function sys-up

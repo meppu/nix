@@ -21,14 +21,14 @@ in
       {
         name = "vscode-zig";
         publisher = "ziglang";
-        version = "0.4.0";
-        sha256 = "sha256-03jBiss14kSkYdbC8IzrBWBgL4Js7xDOwog1WiyNPHk=";
+        version = "0.4.1";
+        sha256 = "sha256-2cB9EFjcEBaFCxnLGDCbKJOHlOXmWjvSO9KYo1wmTLg=";
       }
       {
-        name = "erlang";
-        publisher = "pgourlain";
-        version = "0.9.4";
-        sha256 = "sha256-7FD+sIDThS23Ce5nxsIq1DmEJlG8qmQRLlWO6WlwGBY=";
+        name = "erlang-ls";
+        publisher = "erlang-ls";
+        version = "0.0.39";
+        sha256 = "sha256-R0+NvUw+qQRSD8F9L5bS/AqxCMwoPTYYIfb4L+rxduc=";
       }
       {
         name = "min-theme";

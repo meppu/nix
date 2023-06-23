@@ -18,7 +18,7 @@
     stateVersion = "23.05";
 
     packages = with pkgs; [
-      pods postman cryptsetup
+      pods cryptsetup
       google-chrome-dev discord spotify authy protonvpn-gui
     ];
   };

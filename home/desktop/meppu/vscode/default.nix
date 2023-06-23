@@ -17,6 +17,9 @@ in
       bungcip.better-toml
       esbenp.prettier-vscode
       usernamehw.errorlens
+      eamodio.gitlens
+      yzhang.markdown-all-in-one
+      oderwat.indent-rainbow
     ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "vscode-zig";

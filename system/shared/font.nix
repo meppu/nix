@@ -6,5 +6,6 @@
     noto-fonts-cjk
     noto-fonts-emoji
     jetbrains-mono
+    intel-one-mono
   ];
 }

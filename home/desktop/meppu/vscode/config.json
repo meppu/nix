@@ -21,7 +21,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'IntelOne Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
@@ -36,6 +36,8 @@
   "extensions.autoUpdate": false,
 
   "files.eol": "\n",
+
+  "indentRainbow.indicatorStyle": "light",
 
   "symbols.hidesExplorerArrows": true,
 

@@ -2,6 +2,7 @@
 
 let
   gnome-packages = with pkgs; [
+    gnome-decoder
     gnome.gnome-tweaks
     gnomeExtensions.appindicator
     gnomeExtensions.just-perfection

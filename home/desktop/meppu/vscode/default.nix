@@ -22,10 +22,22 @@ in
       oderwat.indent-rainbow
     ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
+        name = "better-comments";
+        publisher = "aaron-bond";
+        version = "3.0.2";
+        sha256 = "sha256-hQmA8PWjf2Nd60v5EAuqqD8LIEu7slrNs8luc3ePgZc=";
+      }
+      {
+        name = "Bookmarks";
+        publisher = "alefragnani";
+        version = "13.3.1";
+        sha256 = "sha256-CZSFprI8HMQvc8P9ZH+m0j9J6kqmSJM1/Ik24ghif2A=";
+      } 
+      {
         name = "vscode-zig";
         publisher = "ziglang";
-        version = "0.4.1";
-        sha256 = "sha256-2cB9EFjcEBaFCxnLGDCbKJOHlOXmWjvSO9KYo1wmTLg=";
+        version = "0.4.2";
+        sha256 = "sha256-25ZBVrZ5HEoe5EllvaS8WYUcbO5vqcscEU2bYBuNpkw=";
       }
       {
         name = "erlang-ls";

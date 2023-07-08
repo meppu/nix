@@ -14,7 +14,6 @@
     ../../shared/nix.nix
     ../../shared/nvidia.nix
     ../../shared/shell.nix
-    ../../shared/steam.nix
     ../../shared/virtualisation.nix
     ../../shared/sound.nix
   ];

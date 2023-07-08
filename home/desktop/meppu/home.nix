@@ -19,7 +19,7 @@
 
     packages = with pkgs; [
       cryptsetup
-      google-chrome-dev discord spotify authy protonvpn-gui
+      google-chrome discord spotify authy protonvpn-gui
     ];
   };
 }

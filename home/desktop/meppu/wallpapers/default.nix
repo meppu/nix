@@ -2,7 +2,7 @@
 
 {
   dconf.settings."org/gnome/desktop/background" = {
-    picture-uri = "file://" + ./nixos-liquid-light.png;
-    picture-uri-dark = "file://" + ./nixos-liquid-dark.png;
+    picture-uri = "file://" + ./forest.jpg;
+    picture-uri-dark = "file://" + ./forest.jpg;
   };
 }

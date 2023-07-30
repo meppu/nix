@@ -8,6 +8,7 @@ let
     gnomeExtensions.just-perfection
     gnomeExtensions.dash-to-panel
     gnomeExtensions.paperwm
+    gnomeExtensions.blur-my-shell
   ];
 
   gtk-theme = {
@@ -37,8 +38,9 @@ in
       enabled-extensions = [
         "appindicatorsupport@rgcjonas.gmail.com"
         "just-perfection-desktop@just-perfection"
-        "dash-to-panel@jderose9.github.com"
+        # "dash-to-panel@jderose9.github.com"
         "paperwm@hedning:matrix.org"
+        "blur-my-shell@aunetx"
       ];
     };
 
@@ -60,10 +62,6 @@ in
       button-layout = "appmenu";
     };
 
-    "org/gnome/settings-daemon/plugins/media-keys" = {
-      search = [ "<Shift><Super>s" ];
-    };
-    
     "org/gnome/shell/extensions/appindicator" = {
       tray-pos = "right";
     };

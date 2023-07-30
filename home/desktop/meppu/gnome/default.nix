@@ -7,6 +7,7 @@ let
     gnomeExtensions.appindicator
     gnomeExtensions.just-perfection
     gnomeExtensions.dash-to-panel
+    gnomeExtensions.paperwm
   ];
 
   gtk-theme = {
@@ -37,6 +38,7 @@ in
         "appindicatorsupport@rgcjonas.gmail.com"
         "just-perfection-desktop@just-perfection"
         "dash-to-panel@jderose9.github.com"
+        "paperwm@hedning:matrix.org"
       ];
     };
 
@@ -55,7 +57,11 @@ in
     };
 
     "org/gnome/desktop/wm/preferences" = { 
-      button-layout = "appmenu:minimize,maximize,close";
+      button-layout = "appmenu";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      search = [ "<Shift><Super>s" ];
     };
     
     "org/gnome/shell/extensions/appindicator" = {
@@ -83,6 +89,19 @@ in
       dot-style-unfocused = "DOTS";
 
       panel-element-positions = panel-positions;
+    };
+
+    "org/gnome/shell/extensions/paperwm" = {
+      window-gap = 20;
+      horizontal-margin = 20;
+      vertical-margin = 20;
+      vertical-margin-bottom = 20;
+
+      override-hot-corner = true;
+      show-window-position-bar = false;
+      use-default-background = true;
+
+      workspace-names = [ "First" "Second" "Third" "Slave"  ];
     };
   };
 }

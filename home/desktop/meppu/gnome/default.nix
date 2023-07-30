@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 let
   gnome-packages = with pkgs; [
@@ -9,6 +9,7 @@ let
     gnomeExtensions.dash-to-panel
     gnomeExtensions.paperwm
     gnomeExtensions.blur-my-shell
+    gnomeExtensions.rounded-window-corners
   ];
 
   gtk-theme = {
@@ -20,8 +21,12 @@ let
   };
 
   panel-positions = builtins.readFile ./panel-positions.json;
+  paper-wm-css = builtins.readFile ./paper-wm.css;
+  rounded-corners-settings = builtins.readFile ./rounded-corners.conf;
 in
 {
+  home.file.".config/paperwm/user.css".text = paper-wm-css;
+
   home.packages = gnome-packages;
 
   gtk = {
@@ -41,6 +46,7 @@ in
         # "dash-to-panel@jderose9.github.com"
         "paperwm@hedning:matrix.org"
         "blur-my-shell@aunetx"
+        "rounded-window-corners@yilozt"
       ];
     };
 
@@ -60,6 +66,7 @@ in
 
     "org/gnome/desktop/wm/preferences" = { 
       button-layout = "appmenu";
+      workspace-names = [ "First" "Second" "Third" "Slave"  ];
     };
 
     "org/gnome/shell/extensions/appindicator" = {
@@ -69,6 +76,8 @@ in
     "org/gnome/shell/extensions/just-perfection" = {
       activities-button = false;
       hot-corner = false;
+      app-menu = false;
+
       panel-size = 32;
     };
 
@@ -90,16 +99,25 @@ in
     };
 
     "org/gnome/shell/extensions/paperwm" = {
-      window-gap = 20;
-      horizontal-margin = 20;
-      vertical-margin = 20;
-      vertical-margin-bottom = 20;
+      window-gap = 12;
+      horizontal-margin = 12;
+      vertical-margin = 12;
+      vertical-margin-bottom = 12;
 
       override-hot-corner = true;
       show-window-position-bar = false;
       use-default-background = true;
+      show-workspace-indicator = false;
+    };
 
-      workspace-names = [ "First" "Second" "Third" "Slave"  ];
+    "org/gnome/shell/extensions/rounded-window-corners" = with lib.hm.gvariant; {
+      skip-libadwaita-app = false;
+
+      global-rounded-corner-settings = rounded-corners-settings;
+      border-color = mkTuple [ 0.478 0.478 0.478 0.4 ];
+
+      border-width = 1;
+      settings-version = mkUint32 5;
     };
   };
 }

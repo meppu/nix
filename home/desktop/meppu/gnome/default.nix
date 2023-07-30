@@ -4,7 +4,7 @@
   imports = [
     ./appindicator/default.nix
     ./blur-my-shell/default.nix
-    ./dash-to-panel/default.nix
+    # ./dash-to-panel/default.nix
     ./just-perfection/default.nix
     ./paperwm/default.nix
     ./rounded-window-corners/default.nix

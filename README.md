@@ -12,6 +12,10 @@ Then select a profile and rebuild. an example for `desktop`:
 sudo nixos-rebuild switch --flake github:meppu/nix-config#desktop
 ```
 
+## Screenshot
+
+![setup](.github/assets/current.png)
+
 ## Wallpapers
 
 I made my own nix wallpapers. Do whatever you want with these :)

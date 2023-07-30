@@ -18,8 +18,8 @@
     stateVersion = "23.05";
 
     packages = with pkgs; [
-      cryptsetup
-      google-chrome discord spotify authy protonvpn-gui
+      cryptsetup podman-tui dbeaver
+      google-chrome discord spotify authy protonvpn-gui element-desktop
     ];
   };
 }

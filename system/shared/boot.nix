@@ -1,4 +1,4 @@
-{ ... }: 
+{ pkgs, ... }: 
 
 {
   boot = {
@@ -7,6 +7,7 @@
       efi.canTouchEfiVariables = true;
     };
     
+    kernelPackages = pkgs.linuxPackages_latest;
     supportedFilesystems = [ "ntfs" ];
   };
 }

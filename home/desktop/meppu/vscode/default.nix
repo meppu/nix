@@ -18,7 +18,6 @@ in {
         eamodio.gitlens
         yzhang.markdown-all-in-one
         oderwat.indent-rainbow
-        denoland.vscode-deno
       ])
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {

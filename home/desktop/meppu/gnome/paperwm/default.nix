@@ -1,11 +1,8 @@
-{ pkgs, ... }:
-
-let
+{pkgs, ...}: let
   paper-wm-css = builtins.readFile ./user.css;
-in
-{
+in {
   home = {
-    packages = [ pkgs.gnomeExtensions.paperwm ];
+    packages = [pkgs.gnomeExtensions.paperwm];
     file.".config/paperwm/user.css".text = paper-wm-css;
   };
 

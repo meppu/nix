@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   imports = [
     ./appindicator/default.nix
     ./blur-my-shell/default.nix
@@ -44,9 +42,9 @@
       edge-tiling = true;
     };
 
-    "org/gnome/desktop/wm/preferences" = { 
+    "org/gnome/desktop/wm/preferences" = {
       button-layout = "appmenu";
-      workspace-names = [ "First" "Second" "Third" "Fourth"  ];
+      workspace-names = ["First" "Second" "Third" "Fourth"];
     };
   };
 }

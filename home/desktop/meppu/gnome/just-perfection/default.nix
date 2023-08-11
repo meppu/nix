@@ -1,7 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = [ pkgs.gnomeExtensions.just-perfection ];
+{pkgs, ...}: {
+  home.packages = [pkgs.gnomeExtensions.just-perfection];
 
   dconf.settings = {
     "org/gnome/shell".enabled-extensions = [

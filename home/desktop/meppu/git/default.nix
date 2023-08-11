@@ -1,9 +1,7 @@
-{ ... }:
-
-{
+{...}: {
   programs.git = {
     enable = true;
-    userName  = "meppu";
+    userName = "meppu";
     userEmail = "meppu@proton.me";
 
     extraConfig = {

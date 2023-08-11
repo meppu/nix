@@ -10,11 +10,13 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: 
-  let
+  outputs = {
+    nixpkgs,
+    home-manager,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
-  in
-  {
+  in {
     nixosConfigurations = {
       "desktop" = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -26,8 +28,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            
-            home-manager.users.meppu = import  ./home/desktop/meppu/home.nix;
+
+            home-manager.users.meppu = import ./home/desktop/meppu/home.nix;
           }
         ];
       };

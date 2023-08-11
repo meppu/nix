@@ -1,10 +1,7 @@
-{ pkgs, ... }:
-
-let
+{pkgs, ...}: let
   panel-positions = builtins.readFile ./positions.json;
-in
-{
-  home.packages = [ pkgs.gnomeExtensions.dash-to-panel ];
+in {
+  home.packages = [pkgs.gnomeExtensions.dash-to-panel];
 
   dconf.settings = {
     "org/gnome/shell".enabled-extensions = [

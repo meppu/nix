@@ -1,6 +1,4 @@
-{ pkgs, ... }: 
-
-{
+{pkgs, ...}: {
   imports = [
     ./discord/default.nix
     ./git/default.nix
@@ -18,8 +16,15 @@
     stateVersion = "23.05";
 
     packages = with pkgs; [
-      cryptsetup podman-tui dbeaver
-      google-chrome discord spotify authy protonvpn-gui element-desktop
+      cryptsetup
+      podman-tui
+      alejandra
+      google-chrome
+      discord
+      spotify
+      authy
+      protonvpn-gui
+      element-desktop
     ];
   };
 }

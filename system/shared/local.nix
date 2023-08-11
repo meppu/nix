@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   time.timeZone = "Europe/Istanbul";
   console.keyMap = "trq";
 

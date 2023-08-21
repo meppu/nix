@@ -20,7 +20,6 @@
       podman-tui
       alejandra
       google-chrome
-      discord
       spotify
       authy
       protonvpn-gui

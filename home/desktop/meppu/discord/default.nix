@@ -5,6 +5,11 @@
     "SKIP_HOST_UPDATE" = true;
   };
 in {
-  home.packages = [pkgs.discord];
+  home.packages = [
+    (pkgs.discord.override {
+      withVencord = true;
+    })
+  ];
+  
   home.file.".config/discord/settings.json".text = settings;
 }

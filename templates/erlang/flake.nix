@@ -1,6 +1,5 @@
 {
   description = "Write description here";
-  nixConfig.bash-prompt = "\\[\\e[31m\\]\\[\\e[0;31m\\](\\[\\e[1;32m\\]\\u \\[\\e[0;30m\\]in \\[\\e[1;31m\\]erlang \\[\\e[0;30m\\]at \\[\\e[1;34m\\]\\W\\[\\e[0;31m\\])\\[\\e[0m\\] % ";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -8,7 +7,6 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     flake-utils,
     ...

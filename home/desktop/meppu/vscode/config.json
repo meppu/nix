@@ -1,26 +1,4 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "editor.fontFamily": "'IntelOne Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
@@ -39,6 +17,17 @@
 
   "indentRainbow.indicatorStyle": "light",
 
+  "nix.enableLanguageServer": true,
+  "nix.formatterPath": "alejandra",
+  "nix.serverPath": "nil",
+  "nix.serverSettings": {
+    "nil": {
+      "formatting": {
+        "command": ["alejandra"]
+      }
+    }
+  },
+
   "symbols.hidesExplorerArrows": true,
 
   "terminal.integrated.defaultProfile.linux": "fish",
@@ -47,8 +36,8 @@
 
   "update.mode": "none",
 
-  "window.titleBarStyle": "custom",
   "window.commandCenter": true,
+  "window.titleBarStyle": "custom",
 
   "workbench.colorTheme": "Min Dark",
   "workbench.iconTheme": "symbols",

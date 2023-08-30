@@ -7,7 +7,7 @@ in {
 
     extensions =
       (with pkgs.vscode-extensions; [
-        bbenoist.nix
+        jnoortheen.nix-ide
         jakebecker.elixir-ls
         ritwickdey.liveserver
         rust-lang.rust-analyzer

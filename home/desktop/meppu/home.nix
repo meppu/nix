@@ -16,14 +16,19 @@
     stateVersion = "23.05";
 
     packages = with pkgs; [
-      cryptsetup
-      podman-tui
+      # nix
       alejandra
-      google-chrome
-      spotify
+      nil
+      # encryption
+      cryptsetup
+      # development
+      podman-tui
+      # daily
       authy
-      protonvpn-gui
       element-desktop
+      google-chrome
+      protonvpn-gui
+      spotify
     ];
   };
 }

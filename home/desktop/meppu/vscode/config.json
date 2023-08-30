@@ -8,8 +8,6 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
 
-  "erlang.codeLensEnabled": true,
-
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": false,
 

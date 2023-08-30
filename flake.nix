@@ -14,7 +14,7 @@
     nixpkgs,
     home-manager,
     ...
-  } @ inputs: let
+  }: let
     system = "x86_64-linux";
   in {
     nixosConfigurations = {
@@ -32,6 +32,18 @@
             home-manager.users.meppu = import ./home/desktop/meppu/home.nix;
           }
         ];
+      };
+    };
+
+    templates = {
+      elixir = {
+        path = ./templates/elixir;
+        description = "Starter template for Elixir with Mix";
+      };
+
+      erlang = {
+        path = ./templates/erlang;
+        description = "Starter template for Erlang with Rebar3 and ErlangLS";
       };
     };
   };
